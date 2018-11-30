@@ -20,6 +20,12 @@ namespace TrelloClone.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<Cards> Cards { get; set; }
+        public DbSet<Lists> Lists { get; set; }
+        public DbSet<Boards> Board { get; set; }
+
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
