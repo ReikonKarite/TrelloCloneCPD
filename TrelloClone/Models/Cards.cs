@@ -10,5 +10,8 @@ namespace TrelloClone.Models
         public int ID { get; set; }
         public string Content { get; set; }
         public DateTime DateCreated { get; set; }
+
+        public Lists Lists { get; set; }
+        public int ListID { get; set; }
     }
 }

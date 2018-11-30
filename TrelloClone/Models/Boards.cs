@@ -11,5 +11,8 @@ namespace TrelloClone.Models
         public string Title { get; set; }
         public string Content { get; set; }
         public DateTime DateCreated { get; set; }
+
+        public virtual ApplicationUser ApplicationUser { get; set; }
+        public string ApplicationUser_Id { get; set; }
     }
 }
